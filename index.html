@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+   <body>
+   
+      <h3>Students - Flask SQLAlchemy example</h3>
+      <hr/>
+      
+      <form method = "POST">
+         <label for = "firstname">firstname</label><br>
+         <input type = "text" name = "firstname" placeholder = "input first name" /><br>
+         <label for = "lastname">lastname</label><br>
+         <input type = "text" name = "lastname" placeholder = "input last name" /><br>
+         <label for = "email">email</label><br>
+         <input type = "text" name = "email" placeholder = "input email" /><br>
+         <button type="button" id = "numberclicks" name = "numberclicks" onClick="onClick()">Click me</button>
+         <p>Clicks: <a id="clicks" name ="clicks" placeholder = 0 >{{clicks}}</a></p>
+         <input type = "submit" value = "Submit" />
+      </form>    
+   
+    
+      <script>
+         var clicks = 0;
+         function onClick() {
+            clicks += 1;
+            document.getElementById("clicks").innerHTML = clicks;       
+         }
+         </script>
+   </body>
+</html>
